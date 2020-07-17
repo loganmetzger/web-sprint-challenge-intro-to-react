@@ -2,8 +2,15 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
 
-const StyledCharacters = styled.div`
-    
+const StyledCharacter = styled.div`
+    margin: 20px;
+    background-color: rgba(23, 17, 17, 0.39);
+    width: 300px;
+    height: 350px;
+
+    h2 {
+        font-size: 2rem;
+    }
 `
 
 const Character = function(props) {
@@ -13,7 +20,7 @@ const Character = function(props) {
     console.log(character)
 
     return (
-        <div>
+        <StyledCharacter>
             <h2>{character.name}</h2> 
             <p>Height: {character.height}</p>
             <p>Mass: {character.mass}</p>
@@ -22,7 +29,7 @@ const Character = function(props) {
             <p>Eye Color: {character.eye_color}</p>
             <p>Birth Year: {character.birth_year}</p>
             <p>Gender: {character.gender}</p>
-        </div>
+        </StyledCharacter>
 
     )
 
