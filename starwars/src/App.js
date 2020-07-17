@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios'
-import { Container } from './components/Styles'
+// import { Container } from './components/Styles'
+import CharacterList from './components/CharacterList'
 
 const apiUrl = 'https://swapi.dev/api/people/'
 
@@ -29,11 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {
-        data.map(char => {
-          return <Character characters={data} />;
-        })
-      }
+      <CharacterList characters={data} />
     </div>
   );
 }
