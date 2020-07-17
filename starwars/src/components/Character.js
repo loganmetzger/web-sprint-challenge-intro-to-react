@@ -1,5 +1,10 @@
 // Write your Character component here
 import React, { useState } from 'react';
+import styled from 'styled-components'
+
+const StyledCharacters = styled.div`
+    
+`
 
 const Character = function(props) {
 
