@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a JS library which allows for dynamic rendering of components to the DOM via the React Virtual DOM. This means that rather than reloading an entire page every time a change occurs, the page can rerender individual elements when something changes. This is also super useful because it can pull in new data from an API and rerender components when necessary.
+
 1. Describe component state.
+
+State is something that will change within a component. This could be something like a counter, or the unique id of the object of data you are trying to display. 
 
 1. Describe props.
 
+Props are the data being passed from higher level components into subcomponents.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are things that happened when a component rerenders. Sometimes these can be helpful in listening for things to occur and making changes happen as they do. Other times they can cause extra loops (or even infinite loops) to happen, which takes up a lot of computing power or could crash your entire program
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
